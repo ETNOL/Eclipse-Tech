@@ -1,0 +1,53 @@
+.container {
+  margin: 0 auto;
+}
+.research {
+  margin: 0 auto;
+  padding: 43px 40px 35px 76px;
+  background: no-repeat center/cover url("../img/background.png");
+  background-position: 0 0;
+  width: 100%;
+}
+
+.card-slot {
+  padding: 75px 75px 93px 79px;
+  display: inline-block;
+  position: relative;
+}
+
+.card {
+  display: inline-block;
+  position: absolute;
+  height: 149px;
+  width: 156px;
+  left: 0;
+  top: 2px;
+  background: no-repeat center/cover;
+}
+
+.NeutronBombs      { background-image: url("../img/1neutronBombs.png"); }
+.Starbase          { background-image: url("../img/1starbase.png"); }
+.PlasmaCannon      { background-image: url("../img/1plasmaCannon.png"); }
+.PhaseShield       { background-image: url("../img/1phaseShield.png"); }
+.AdvancedMining    { background-image: url("../img/1advancedMining.png"); }
+.TachyonSource     { background-image: url("../img/1tachyonSource.png"); }
+.PlasmaMissile     { background-image: url("../img/1plasmaMissle.png"); }
+.GluonComputer     { background-image: url("../img/1gluonComputer.png"); }
+
+.GaussShield       { background-image: url("../img/2gaussShield.png"); }
+.ImprovedHull      { background-image: url("../img/2improvedHull.png"); }
+.FusionSource      { background-image: url("../img/2fusionSource.png"); }
+.PositronComputer  { background-image: url("../img/2positronComputer.png"); }
+.AdvancedEconomy   { background-image: url("../img/2advancedEconomy.png"); }
+.TachyonDrive      { background-image: url("../img/2tachyonDrive.png"); }
+.AntimatterCannon  { background-image: url("../img/2antimatterCannon.png"); }
+.QuantumGrid       { background-image: url("../img/2quantumGrid.png"); }
+
+.Nanorobots        { background-image: url("../img/3nanorobots.png"); }
+.FusionDrive       { background-image: url("../img/3fusionDrive.png"); }
+.Orbitals          { background-image: url("../img/3orbital.png"); }
+.AdvancedLabs      { background-image: url("../img/3advancedLabs.png"); }
+.AdvancedRobotics  { background-image: url("../img/3advancedRobotics.png"); }
+.Monolith          { background-image: url("../img/3monolith.png"); }
+.ArtifactKey       { background-image: url("../img/3artifactKey.png"); }
+.WormholeGenerator { background-image: url("../img/3wormholeGener.png"); }
