@@ -117,23 +117,34 @@ techs.forEach(function(tech, i) {
 	);
 });
 
-$('.card-slot').click(function() {
-  var $slot = $(this);
+function increase(e) {
+  var $slot = $(e.currentTarget);
   var tech = $slot.attr('data-tech');
   var offset = parseInt($slot.attr('data-offset'));
   var card = buildCard(tech)
     .css('transform', 'translate('+offset+'px, '+offset+'px)');
   $slot.append(card
   );
-  $slot.attr('data-offset', offset + baseOffset);
-});
+  $slot.attr('data-offset', offset - baseOffset);
 
-$('.card-slot').on('contextmenu', function() {
-  $slot = $(this);
+}
+
+function decrease (e) {
+	e.preventDefault();
+  $slot = $(e.currentTarget);
   var offset = parseInt($slot.attr('data-offset'));
   var lastCard = $slot.find('.card').last();
   lastCard.remove();
-  $slot.attr('data-offset', offset - baseOffset);
-	return false;
-});
+  $slot.attr('data-offset', offset + baseOffset);
+
+}
+
+var $cardSlots = $('.card-slot');
+
+$cardSlots
+	.on('click tap', function(e) { increase(e); })
+	.on('contextmenu doubletap', function(e) { decrease(e); });
+
+
+
 })(window.jQuery);
