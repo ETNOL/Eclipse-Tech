@@ -1,5 +1,5 @@
 !(function ($) {
-var baseOffset = 3;
+var baseOffset = 6;
 var techs = [{
 	name: 'Neutron Bombs',
 	cost: '2/2',

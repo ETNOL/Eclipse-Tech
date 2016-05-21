@@ -1,16 +1,21 @@
+body {
+  margin: 0;
+}
 .container {
   margin: 0 auto;
 }
 .research {
   margin: 0 auto;
-  padding: 43px 40px 35px 76px;
+  padding: 55px 0px 0px 100px;
   background: no-repeat center/cover url("../img/background.png");
   background-position: 0 0;
-  width: 100%;
+  width: 1700px;
+  height: 700px;
 }
 
 .card-slot {
-  padding: 75px 75px 93px 79px;
+  padding: 95px 100px;
+  margin-bottom: 35px;
   display: inline-block;
   position: relative;
 }
@@ -18,8 +23,8 @@
 .card {
   display: inline-block;
   position: absolute;
-  height: 149px;
-  width: 156px;
+  height: 100%;
+  width: 100%;
   left: 0;
   top: 2px;
   background: no-repeat center/cover;
