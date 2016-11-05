@@ -134,9 +134,9 @@ function decrease (e) {
   $slot = $(e.currentTarget);
   var offset = parseInt($slot.attr('data-offset'));
   var lastCard = $slot.find('.card').last();
+  if (!lastCard.length) { return; }
   lastCard.remove();
   $slot.attr('data-offset', offset + baseOffset);
-
 }
 
 var $cardSlots = $('.card-slot');
@@ -144,7 +144,6 @@ var $cardSlots = $('.card-slot');
 $cardSlots
 	.on('click tap', function(e) { increase(e); })
 	.on('contextmenu doubletap', function(e) { decrease(e); });
-
 
 
 })(window.jQuery);
